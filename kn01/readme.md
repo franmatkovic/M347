@@ -29,12 +29,12 @@
 ### C. Registry und Repository (10%)
 
 1. Screenshot mit dem leeren Inhalt des neu erstellten Repository
-   ![](../img/kn01_6.png) <br>
+   ![](../img/kn01_7.png) <br>
 
 ### D. Privates Repository (20%)
 
 1. Screenshot der Docker-Hub Seite mit den sichtbaren Tags Ihres Repos:
-   ![](../img/kn01_7.png) <br>
+   ![](../img/kn01_6.png) <br>
 
 2. Befehle, die Sie ausgeführt haben und erklärung zu den Befehlen, die die einzelnen Komponenten beschreiben.
    1. `docker pull nginx`
