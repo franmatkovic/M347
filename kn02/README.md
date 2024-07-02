@@ -30,20 +30,20 @@
 ### B. Dockerfile II
 
 1. DB: telnet Befehl der zeigt, dass der Zugriff auf den DB Server funktioniert (Screenshot):
-   ![](images/5.png) <br>
+   ![](/B/img/1.png) <br>
 
-2. DB: Dockerfile für Ihren DB-Container: [Dockerfile](B/dockerfile-db)
+2. DB: Dockerfile für Ihren DB-Container: [Dockerfile](/B/dockerfile)
 
 3. DB: docker build und docker run Befehle für Ihren DB-Container: <br>
    `docker build -t kn02b-db .` <br>
    `docker run -d --name kn02b-db -p 3306:3306 kn02b-db`
 
 4. Web: Screenshots der beiden Seiten info.php und db.php:
-   ![](images/3.png) <br>
-   ![](images/4.png)
+   ![](/B/img/2.png) <br>
+   ![](/B/img/3.png)
 
 5. Web: Dockerfile für Ihren Web-Container:
-   [Dockerfile](B/dockerfile-web)
+   [Dockerfile](/B/dockerfile-web)
 
 6. Web: docker build und docker run Befehle für Ihren Web-Container: <br>
    `docker build -t kn02b-web:latest -f dockerfile-web .` <br>
