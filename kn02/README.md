@@ -9,7 +9,7 @@
    `EXPOSE 80` Legt fest, dass der Container Port 80 nach aussen freigibt, um den Webserver zu erreichen <br>
 
 2. Dockerfile, welches mit den entsprechenden Zeilen wie oben beschrieben:
-   [Dockerfile](/A/dockerfile)
+   [Dockerfile](/kn02/A/dockerfile)
 
 3. Notwendige Docker-Befehle für das build: <br>
    `docker build -t kaama02/m347:kn02a .`
@@ -22,33 +22,33 @@
    `docker push kaama02/m347:kn02a`
 
 6. Screenshot aus Docker Desktop, welcher das Image kn02a zeigt:
-   ![](/A/img/kn02-1.png) <br>
+   ![](/kn02/A/img/kn02-1.png) <br>
 
 7. Screenshot der HTML-Seite, der die Seite helloworld.html zeigt, nachdem der Container gestartet wurde: <br>
-   ![](/A/img/kn02-2.png) <br>
+   ![](/kn02/A/img/kn02-2.png) <br>
 
 ### B. Dockerfile II
 
 1. DB: telnet Befehl der zeigt, dass der Zugriff auf den DB Server funktioniert (Screenshot):
-   ![](/B/img/1.png) <br>
+   ![](/kn02/B/img/1.png) <br>
 
-2. DB: Dockerfile für Ihren DB-Container: [Dockerfile](/B/dockerfile)
+2. DB: Dockerfile für Ihren DB-Container: [Dockerfile](/kn02/B/dockerfile)
 
 3. DB: docker build und docker run Befehle für Ihren DB-Container: <br>
    `docker build -t kn02b-db .` <br>
    `docker run -d --name kn02b-db -p 3306:3306 kn02b-db`
 
 4. Web: Screenshots der beiden Seiten info.php und db.php:
-   ![](/B/img/2.png) <br>
-   ![](/B/img/3.png)
+   ![](/kn02/B/img/2.png) <br>
+   ![](/kn02/B/img/3.png)
 
 5. Web: Dockerfile für Ihren Web-Container:
-   [Dockerfile](/B/dockerfile-web)
+   [Dockerfile](/kn02/B/dockerfile-web)
 
 6. Web: docker build und docker run Befehle für Ihren Web-Container: <br>
    `docker build -t kn02b-web:latest -f dockerfile-web .` <br>
    `docker run -d --name kn02b-web -p 80:80 --link kn02b-db:db kn02b-web`
 
 7. Web: Angepasste PHP-Dateien: <br>
-   [info.php](B/info.php) <br>
-   [db.php](B/db.php)
+   [info.php](/kn02/B/info.php) <br>
+   [db.php](/kn02/B/db.php)
