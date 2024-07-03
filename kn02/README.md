@@ -12,14 +12,14 @@
    [Dockerfile](/kn02/A/dockerfile)
 
 3. Notwendige Docker-Befehle für das build: <br>
-   `docker build -t kaama02/m347:kn02a .`
+   `docker build -t fran686/m347:kn02a .`
 
 4. Befehl für den Start des Containers:<br>
-   `docker run -d -p 8080:80 kaama02/m347:kn02a` <br>
+   `docker run -d -p 8080:80 fran686/m347:kn02a` <br>
 
 5. Befehle für dem push in das private Repository: <br>
    `docker login`, <br>
-   `docker push kaama02/m347:kn02a`
+   `docker push fran686/m347:kn02a`
 
 6. Screenshot aus Docker Desktop, welcher das Image kn02a zeigt:
    ![](/kn02/A/img/kn02-1.png) <br>
